@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad digital básica</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div id="progreso" aria-hidden="true"></div>
+
+  <header>
+    <h1>Seguridad digital básica</h1>
+    <p>Hábitos simples para proteger tu computador y tus cuentas.</p>
+    <button id="btnTema" type="button">Activar modo oscuro</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tres hábitos clave</h2>
+      <p id="mensajeTarjeta" class="aviso">Pasa el cursor sobre una tarjeta.</p>
+      <div class="tarjetas">
+        <article class="tarjeta" data-mensaje="Usa contraseñas largas y distintas en cada cuenta.">
+          <h3>Contraseñas</h3>
+          <p>Mínimo 12 caracteres y un gestor de contraseñas.</p>
+        </article>
+        <article class="tarjeta" data-mensaje="Desconfía de enlaces que te piden datos con urgencia.">
+          <h3>Correos</h3>
+          <p>Verifica el remitente antes de abrir enlaces o adjuntos.</p>
+        </article>
+        <article class="tarjeta" data-mensaje="Las actualizaciones cierran fallas que los virus aprovechan.">
+          <h3>Actualizaciones</h3>
+          <p>Mantén el sistema y el antivirus al día.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Revisa tu contraseña</h2>
+      <label for="clave">Escribe una contraseña de prueba (no uses una real)</label>
+      <input id="clave" type="text" autocomplete="off">
+      <p id="fuerza" class="aviso">0 caracteres</p>
+    </section>
+
+    <section>
+      <h2>Reporta un incidente</h2>
+      <form id="formulario" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text">
+        <label for="correo">Correo</label>
+        <input id="correo" type="email">
+        <button type="submit">Enviar reporte</button>
+        <p id="resultado" class="aviso" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
